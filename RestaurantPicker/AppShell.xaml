@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RestaurantPicker.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RestaurantPicker"
+    xmlns:views="clr-namespace:RestaurantPicker.Views"
+    TabBarBackgroundColor="Crimson"
+    TabBarUnselectedColor="WhiteSmoke"
+    TabBarForegroundColor="DarkGray"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Pick" Icon="restaurant_icon">
+            <ShellContent Shell.BackgroundColor="Crimson"
+                          Title="Restaurant Picker"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+        </Tab>
+        
+        <Tab Title="Add" Icon="add_icon">
+            <ShellContent Shell.BackgroundColor="Crimson"
+                          Title="Add Restaurant"
+                          ContentTemplate="{DataTemplate views:AddPage}"
+                          Route="AddPage" />
+        </Tab>
+        
+        <Tab Title="List" Icon="list_icon">
+            <ShellContent Shell.BackgroundColor="Crimson"
+                          Title="Restaurants"
+                          ContentTemplate="{DataTemplate views:ListPage}"
+                          Route="ListPage" />
+        </Tab>
+    </TabBar>
+    
+
+</Shell>

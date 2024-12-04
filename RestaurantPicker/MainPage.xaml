@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestaurantPicker.MainPage">
+
+    <Grid>
+        <!-- Overlapping items -->
+        <Image Source="burger_fries.jpg" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+               Opacity="0.925" />
+        
+        <Label Text="Hungry? Press below!" FontSize="32" HorizontalOptions="Center" Margin="25, 25" TextColor="WhiteSmoke" />
+        
+        <Button Text="Get Restaurant" HorizontalOptions="Center" VerticalOptions="Center" 
+                WidthRequest="256" HeightRequest="128" Opacity="0.85" FontSize="32" FontAttributes="Bold" 
+                BackgroundColor="Crimson" Clicked="GetRestaurant_OnClicked"/>
+    </Grid>
+</ContentPage>
